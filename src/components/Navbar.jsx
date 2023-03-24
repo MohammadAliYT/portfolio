@@ -60,20 +60,21 @@ const Navbar = () => {
               <span className="hamburger-inner"></span>
             </span>
           </button>
-          {/* <div
-            className={`${
-              !toggleMenu ? "hidden" : "flex"
-            } bg-red min-w-[140px] right-0 top-20`}
-          ></div> */}
-          <div className={`dropdown-menu ${isOpen ? "open" : ""}`}>
+          <div
+            className={`dropdown-menu ${
+              isOpen ? "open" : ""
+            } rounded-b-lg py-2 px-2`}
+          >
             <ul className="cursor-pointer" onClick={toggleMenu}>
               {navLinks.map((link) => {
                 return (
                   <li
                     key={link.id}
                     className={`${
-                      active === link.title ? "text-white" : "text-secondary"
-                    } hover:text-white text-[18px] font-medium cursor-pointer`}
+                      active === link.title
+                        ? "text-[#1d1836]"
+                        : "text-secondary"
+                    } hover:text-white text-[18px] font-medium cursor-pointer `}
                     onClick={() => setActive(link.title)}
                   >
                     <a href={`#${link.id}`}>{link.title}</a>

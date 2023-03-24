@@ -34,6 +34,10 @@ import hl_ceo from "./company/hl_ceo.jpeg";
 import ss_ceo from "./company/ss_ceo.jpeg";
 import gillani from "./company/gillani.jpg";
 
+import github_logo from "./tech/github_logo.png";
+import dribble from "./tech/dribble.png";
+import linkedin from "./tech/linkedin.png";
+
 export {
   logo,
   backend,
@@ -66,4 +70,7 @@ export {
   hl_ceo,
   ss_ceo,
   gillani,
+  github_logo,
+  linkedin,
+  dribble,
 };
